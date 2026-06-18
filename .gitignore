@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+
+# Next.js build output
+.next/
+out/
+
+# Local env files
+.env
+.env*.local
+
+# Claude config
+.claude/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Raw image source folders (originals, not part of the deployed site)
+Bilder & Icons/
+Bilder Gebäude/
+Bilder Personen/
+Bilder Personen Portrait/

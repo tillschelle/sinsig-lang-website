@@ -1,0 +1,177 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 780" fill="white">
+  <!--
+    Mercedes-Benz Actros StreamSpace – Seitenansicht rechts
+    Nur weiße Flächen, kein Dunkel – für Dark-Mode-Overlay geeignet
+  -->
+
+  <!-- ══════════════════════════════
+       CHASSIS / RAHMEN
+  ══════════════════════════════ -->
+  <rect x="860" y="490" width="580" height="44" rx="5"/>
+  <rect x="880" y="534" width="520" height="18" rx="3" opacity="0.6"/>
+
+  <!-- ══════════════════════════════
+       5TH WHEEL / SATTELKUPPLUNG
+  ══════════════════════════════ -->
+  <rect x="880" y="460" width="220" height="32" rx="4"/>
+  <path d="M 880,460 Q 990,442 1100,460 L 1100,464 Q 990,448 880,464 Z" opacity="0.5"/>
+
+  <!-- ══════════════════════════════
+       KRAFTSTOFFTANK
+  ══════════════════════════════ -->
+  <rect x="940" y="534" width="185" height="108" rx="16"/>
+  <!-- Tank-Reifen-Abschnitt (Bands als Helligkeit) -->
+  <rect x="970" y="534" width="9" height="108" rx="3" opacity="0.5"/>
+  <rect x="1100" y="534" width="9" height="108" rx="3" opacity="0.5"/>
+
+  <!-- ══════════════════════════════
+       HINTERACHSE
+  ══════════════════════════════ -->
+  <rect x="1068" y="552" width="215" height="16" rx="5"/>
+
+  <!-- ══════════════════════════════
+       HINTERRAD – Zwillingsbereifung
+       (innerer Reifen sichtbar)
+  ══════════════════════════════ -->
+  <!-- Innerer Reifen (hinter dem äußeren, leicht versetzt) -->
+  <circle cx="1185" cy="645" r="104" opacity="0.35"/>
+  <!-- Äußerer Reifen -->
+  <circle cx="1200" cy="645" r="108"/>
+  <!-- Felge (leicht kleiner, gleiche Farbe – Tiefe durch Kreis-Form) -->
+  <circle cx="1200" cy="645" r="70" opacity="0.85"/>
+  <!-- Nabenkappe -->
+  <circle cx="1200" cy="645" r="28"/>
+
+  <!-- ══════════════════════════════
+       VORDERACHSE
+  ══════════════════════════════ -->
+  <rect x="345" y="552" width="162" height="16" rx="5"/>
+
+  <!-- ══════════════════════════════
+       VORDERRAD – Einzelbereifung
+  ══════════════════════════════ -->
+  <circle cx="426" cy="645" r="104"/>
+  <circle cx="426" cy="645" r="67" opacity="0.85"/>
+  <circle cx="426" cy="645" r="27"/>
+
+  <!-- ══════════════════════════════
+       HAUPTKAROSSERIE DER KABINE
+       Actros StreamSpace: kastenförmig,
+       sehr hoch, markante Stufenfront
+  ══════════════════════════════ -->
+  <path d="
+    M 130,750
+    L 120,716
+    L 114,686
+    L 110,654
+    L 117,622
+    L 128,594
+    L 144,566
+    L 160,538
+    L 175,510
+    L 191,474
+    L 207,430
+    L 223,382
+    L 238,333
+    L 252,284
+    L 264,238
+    L 274,196
+    L 282,162
+    L 290,136
+    L 298,115
+    L 309,101
+    L 325,93
+    L 344,88
+    L 360,86
+    L 862,86
+    L 882,100
+    L 888,118
+    L 891,142
+    L 891,175
+    L 891,542
+    L 878,563
+    L 872,578
+    L 194,578
+    L 184,602
+    L 166,640
+    L 148,700
+    L 138,740
+    L 130,750
+    Z
+  "/>
+
+  <!-- ══════════════════════════════
+       SONNENBLENDE
+       Sehr charakteristisch für den Actros –
+       ragt nach vorne über die Windschutzscheibe
+  ══════════════════════════════ -->
+  <path d="
+    M 325,86
+    L 305,66
+    L 290,66
+    L 283,78
+    L 283,86
+    Z
+  "/>
+
+  <!-- ══════════════════════════════
+       AUSSENSPIEGEL
+       Actros: sehr groß, rechteckig,
+       auf hohem Stiel an der A-Säule
+  ══════════════════════════════ -->
+  <!-- Haupt-Spiegelarm (Stiel oben) -->
+  <rect x="271" y="148" width="14" height="94" rx="4"/>
+  <!-- Verbindungsstrebe (zweite Strebe typisch für Actros) -->
+  <rect x="271" y="195" width="56" height="8" rx="3"/>
+  <!-- Haupt-Spiegelkopf (groß, rechteckig) -->
+  <rect x="196" y="120" width="78" height="108" rx="9"/>
+  <!-- Weitwinkel-Spiegel (klein, oben drauf) -->
+  <rect x="215" y="98" width="50" height="32" rx="6"/>
+
+  <!-- ══════════════════════════════
+       MARKANTES FRONTGITTER-DETAIL
+       Schmaler Streifen unter der Windschutzscheibe
+  ══════════════════════════════ -->
+  <rect x="142" y="548" width="44" height="6" rx="2" opacity="0.6"/>
+  <rect x="142" y="558" width="44" height="6" rx="2" opacity="0.6"/>
+  <rect x="142" y="568" width="44" height="6" rx="2" opacity="0.6"/>
+
+  <!-- ══════════════════════════════
+       WINDSCHUTZSCHEIBE (heller Bereich)
+       Als helle Kontur angedeutet
+  ══════════════════════════════ -->
+  <path d="
+    M 340,104
+    L 356,100
+    L 700,100
+    L 700,200
+    L 560,200
+    L 395,212
+    L 322,256
+    L 296,310
+    L 278,368
+    L 264,416
+    L 254,448
+    L 248,472
+    L 245,490
+    L 244,500
+    L 248,500
+    L 878,563
+    L 891,542
+    L 891,142
+    L 888,118
+    L 882,100
+    L 862,86
+    L 700,86
+    L 700,100
+    Z
+  " opacity="0.18"/>
+
+  <!-- ══════════════════════════════
+       AUSPUFFROHR (typisch für Actros,
+       geht senkrecht an der Kabine hoch)
+  ══════════════════════════════ -->
+  <rect x="820" y="86" width="18" height="160" rx="5" opacity="0.7"/>
+  <ellipse cx="829" cy="86" rx="9" ry="5" opacity="0.7"/>
+
+</svg>
