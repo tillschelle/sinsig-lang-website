@@ -62,11 +62,11 @@ export default function UeberUnsPage() {
       <main className="pt-16">
 
         {/* Hero */}
-        <section className="bg-[#111] border-b border-[#c0c0c0]/10 py-10 px-6">
+        <section className="bg-[#161616] border-b border-[#c0c0c0]/10 py-10 px-6">
           <div className="max-w-7xl mx-auto">
             <p className="text-[#c0c0c0]/50 text-xs tracking-[0.3em] uppercase mb-3">Seit 1945</p>
-            <h1 className="text-5xl md:text-6xl font-light text-white mb-6">Über uns</h1>
-            <p className="text-[#555] text-base max-w-2xl leading-relaxed">
+            <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">Über uns</h1>
+            <p className="text-[#707070] text-base max-w-2xl leading-relaxed">
               Fast acht Jahrzehnte Mercedes-Benz Service in Bingen am Rhein. Was als Handwerksbetrieb zweier Gründer begann,
               ist heute ein etabliertes Fachunternehmen mit rund 30 Mitarbeiterinnen und Mitarbeitern, familiär im Charakter,
               professionell im Anspruch.
@@ -75,11 +75,11 @@ export default function UeberUnsPage() {
         </section>
 
         {/* Timeline */}
-        <section className="bg-[#111] py-14 px-6">
+        <section className="bg-[#161616] py-14 px-6">
           <div className="max-w-7xl mx-auto">
             <div className="mb-12">
               <p className="text-[#c0c0c0]/50 text-xs tracking-[0.3em] uppercase mb-3">Geschichte</p>
-              <h2 className="text-3xl font-light text-white">Unsere Meilensteine</h2>
+              <h2 className="text-3xl font-bold text-white">Unsere Meilensteine</h2>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-10">
@@ -113,7 +113,7 @@ export default function UeberUnsPage() {
                       </div>
                       <div className="md:pl-12 flex-1">
                         <h3 className="text-white font-medium text-base mb-2">{item.title}</h3>
-                        <p className="text-[#555] text-sm leading-relaxed">{item.desc}</p>
+                        <p className="text-[#707070] text-sm leading-relaxed">{item.desc}</p>
                       </div>
                     </div>
                   ))}
@@ -125,8 +125,11 @@ export default function UeberUnsPage() {
         </section>
 
         {/* Heute – Werte */}
-        <section className="bg-[#1a1a1a] border-t border-[#c0c0c0]/10 py-20 px-6">
+        <section className="bg-[#202020] border-t border-[#c0c0c0]/10 py-20 px-6">
           <div className="max-w-7xl mx-auto">
+            <p className="text-[#8a8a8a] text-sm leading-relaxed max-w-2xl mb-10">
+              Auch heute ist Sinsig & Lang ein Familienbetrieb: Marion Lang, Ehefrau von Volker Lang, ist als Gesellschafterin weiterhin Teil des Unternehmens. Die operative Führung liegt seit März 2022 bei Martin Svoboda.
+            </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-[#c0c0c0]/10">
               {[
                 {
@@ -142,9 +145,9 @@ export default function UeberUnsPage() {
                   desc: "Jährlich ausgezeichnet von Mercedes-Benz seit 1998: ein Maßstab, dem wir uns täglich neu verpflichten.",
                 },
               ].map((item) => (
-                <div key={item.label} className="bg-[#1a1a1a] p-8 hover:bg-[#222] transition-colors">
+                <div key={item.label} className="bg-[#202020] p-8 hover:bg-[#272727] transition-colors">
                   <div className="text-white font-medium text-base mb-3">{item.label}</div>
-                  <p className="text-[#555] text-sm leading-relaxed">{item.desc}</p>
+                  <p className="text-[#707070] text-sm leading-relaxed">{item.desc}</p>
                 </div>
               ))}
             </div>
@@ -152,11 +155,11 @@ export default function UeberUnsPage() {
         </section>
 
         {/* CTA */}
-        <section className="bg-[#111] border-t border-[#c0c0c0]/10 py-20 px-6">
+        <section className="bg-[#161616] border-t border-[#c0c0c0]/10 py-20 px-6">
           <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
             <div>
-              <h2 className="text-3xl font-light text-white mb-3">Lernen Sie unser Team kennen</h2>
-              <p className="text-[#555] text-sm max-w-md">
+              <h2 className="text-3xl font-bold text-white mb-3">Lernen Sie unser Team kennen</h2>
+              <p className="text-[#707070] text-sm max-w-md">
                 Hinter jedem Meilenstein stehen Menschen. Erfahren Sie, wer heute für Sie da ist.
               </p>
             </div>

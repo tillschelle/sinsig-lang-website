@@ -3,7 +3,8 @@ import { useEffect, useRef, useState } from 'react';
 
 const stats = [
   { end: 1945, start: 1920, prefix: "", suffix: "", label: "Gegründet", decimals: 0 },
-  { end: 4.8,  start: 0,    prefix: "", suffix: "★", label: "Google Bewertung", decimals: 1 },
+  { end: 4.7,  start: 0,    prefix: "", suffix: "★", label: "Google Bewertung", decimals: 1 },
+  { end: 4.8,  start: 0,    prefix: "", suffix: "★", label: "mobile.de Bewertung", decimals: 1 },
   { end: 80, start: 60, prefix: "", suffix: "+", label: "Jahre Erfahrung", decimals: 0 },
 ];
 
@@ -37,10 +38,10 @@ function Counter({ item, triggered }) {
 
   return (
     <div className="text-center">
-      <div className="text-3xl md:text-4xl font-light text-white mb-1 tabular-nums">
+      <div className="text-3xl md:text-4xl text-white mb-1 tabular-nums" style={{ fontWeight: 450 }}>
         {item.prefix}{display}{item.suffix}
       </div>
-      <div className="text-[#555] text-xs tracking-widest uppercase">{item.label}</div>
+      <div className="text-[#707070] text-xs tracking-widest uppercase">{item.label}</div>
     </div>
   );
 }
@@ -50,6 +51,15 @@ export default function StatsCounter() {
   const ref = useRef(null);
 
   useEffect(() => {
+    function isInView() {
+      if (!ref.current) return false;
+      const rect = ref.current.getBoundingClientRect();
+      return rect.top < window.innerHeight && rect.bottom > 0;
+    }
+    if (isInView()) {
+      setTriggered(true);
+      return;
+    }
     const observer = new IntersectionObserver(
       ([entry]) => { if (entry.isIntersecting) setTriggered(true); },
       { threshold: 0.15 }
@@ -59,8 +69,8 @@ export default function StatsCounter() {
   }, []);
 
   return (
-    <section className="bg-[#222] border-y border-[#c0c0c0]/15 py-12" ref={ref}>
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+    <section className="bg-[#272727] border-y border-[#c0c0c0]/15 py-12" ref={ref}>
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8">
         {stats.map((s) => (
           <Counter key={s.label} item={s} triggered={triggered} />
         ))}

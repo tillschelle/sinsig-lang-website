@@ -32,11 +32,11 @@ const services = [
   {
     number: "05",
     title: "Kühlaggregate",
-    desc: "Wartung, Reparatur und Prüfung von Kühlaggregaten aller gängigen Hersteller.",
+    desc: "Carrier-Partnerbetrieb für Wartung, Reparatur und Prüfung von Kühlaggregaten. Auch andere gängige Systeme decken wir ab.",
   },
   {
     number: "06",
-    title: "Auflieger",
+    title: "Trailer-Service & Auflieger",
     desc: "Wartung, Reparatur, HU und SP für Auflieger aller Art: Kühlauflieger, Curtainsider, Planenauflieger. Egal was hinten dran hängt, wir kümmern uns drum.",
   },
   {
@@ -47,7 +47,7 @@ const services = [
   {
     number: "08",
     title: "Flotte & Telematik",
-    desc: "Aktivierung und Betreuung von Mercedes-Benz Fleetboard und dem Uptime-Dienst für vorausschauende Wartung und weniger Standzeiten.",
+    desc: "Flottenlösungen für Speditionen: Aktivierung und Betreuung von Mercedes-Benz Fleetboard und dem Uptime-Dienst für vorausschauende Wartung und weniger Standzeiten.",
   },
 ];
 
@@ -63,7 +63,7 @@ export default function LKWPage() {
       <Header />
       <main>
         {/* ── HERO ── */}
-        <section className="relative min-h-[55vh] flex items-end bg-[#111] overflow-hidden" style={{ paddingTop: "4rem" }}>
+        <section className="relative min-h-[55vh] flex items-end bg-[#161616] overflow-hidden" style={{ paddingTop: "4rem" }}>
           {/* Actros Hero Foto – nach unten versetzt, oben bleibt dunkel */}
           <div className="absolute bottom-0 left-0 right-0 h-[85%] z-0">
             <Image
@@ -76,22 +76,22 @@ export default function LKWPage() {
             />
           </div>
           {/* Gradient unten */}
-          <div className="absolute inset-0 bg-gradient-to-t from-[#111] via-[#111]/60 to-transparent z-10" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#161616] via-[#161616]/60 to-transparent z-10" />
           {/* Gradient oben – weicher Übergang statt harter Kante */}
-          <div className="absolute inset-0 bg-gradient-to-b from-[#111] via-[#111]/40 to-transparent z-10" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#161616] via-[#161616]/40 to-transparent z-10" />
           <div className="relative z-20 w-full max-w-7xl mx-auto px-6 pb-16">
             <p className="text-[#c0c0c0]/50 text-xs tracking-[0.3em] uppercase mb-4">LKW · Transporter · Nutzfahrzeuge</p>
-            <h1 className="text-5xl md:text-7xl font-light text-white leading-none mb-5">
+            <h1 className="text-5xl md:text-7xl font-bold text-white leading-none mb-5">
               LKW &<br />Transporter
             </h1>
-            <p className="text-[#555] text-base max-w-xl leading-relaxed">
+            <p className="text-[#707070] text-base max-w-xl leading-relaxed">
               Ob Einzelfahrer oder Flotte: Wir sind für Sie da. Persönlich, zuverlässig und mit dem Fachwissen, das auf der Straße zählt.
             </p>
           </div>
         </section>
 
         {/* ── HIGHLIGHT BADGES ── */}
-        <section className="bg-[#1a1a1a] border-b border-[#c0c0c0]/10">
+        <section className="bg-[#202020] border-b border-[#c0c0c0]/10">
           <div className="max-w-7xl mx-auto px-6 py-0 flex flex-col md:flex-row items-stretch">
             <div className="flex-1 grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-[#c0c0c0]/10">
               {highlights.map((h) => (
@@ -99,7 +99,7 @@ export default function LKWPage() {
                   <div className="w-1.5 h-8 bg-[#c0c0c0]/20 flex-shrink-0" />
                   <div>
                     <div className="text-white text-sm font-medium">{h.label}</div>
-                    <div className="text-[#555] text-xs mt-0.5">{h.sub}</div>
+                    <div className="text-[#8a8a8a] text-sm mt-0.5">{h.sub}</div>
                   </div>
                 </div>
               ))}
@@ -122,18 +122,17 @@ export default function LKWPage() {
         </section>
 
         {/* ── LEISTUNGEN GRID ── */}
-        <section className="py-24 bg-[#111]">
+        <section className="py-24 bg-[#161616]">
           <div className="max-w-7xl mx-auto px-6">
             <div className="mb-14">
               <p className="text-[#c0c0c0]/50 text-xs tracking-[0.3em] uppercase mb-3">Leistungsübersicht</p>
-              <h2 className="text-4xl font-light text-white">Was wir für Sie tun</h2>
+              <h2 className="text-4xl font-bold text-white">Was wir für Sie tun</h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-[#c0c0c0]/10">
               {services.map((s) => (
-                <div key={s.number} className="bg-[#111] p-8 hover:bg-[#1a1a1a] transition-colors">
-                  <div className="text-[#c0c0c0]/30 text-xs font-mono mb-8 tracking-widest">{s.number}</div>
+                <div key={s.number} className="bg-[#161616] p-8 hover:bg-[#202020] transition-colors">
                   <h3 className="text-white font-medium text-base mb-3">{s.title}</h3>
-                  <p className="text-[#555] text-sm leading-relaxed">{s.desc}</p>
+                  <p className="text-[#707070] text-sm leading-relaxed">{s.desc}</p>
                 </div>
               ))}
             </div>
@@ -141,11 +140,11 @@ export default function LKWPage() {
         </section>
 
         {/* ── CTA ── */}
-        <section className="py-20 bg-[#111] border-t border-[#c0c0c0]/10">
+        <section className="py-20 bg-[#161616] border-t border-[#c0c0c0]/10">
           <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-8">
             <div>
-              <h2 className="text-3xl md:text-4xl font-light text-white mb-3">Direkt zum LKW-Team</h2>
-              <p className="text-[#555] text-sm max-w-md">
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-3">Direkt zum LKW-Team</h2>
+              <p className="text-[#707070] text-sm max-w-md">
                 Tachographenprüfung, SP-Termin oder Frage zum Kühlaufbau: Schreiben Sie uns direkt.
                 Kein Callcenter, kein Formular.
               </p>

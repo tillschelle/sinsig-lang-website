@@ -107,14 +107,14 @@ function Funnel() {
               {customExp.trim() && (
                 <button
                   onClick={() => { setExperience(customExp.trim()); setStep(2); }}
-                  className="text-[#555] hover:text-white text-sm transition-colors flex-shrink-0"
+                  className="text-[#707070] hover:text-white text-sm transition-colors flex-shrink-0"
                 >
                   →
                 </button>
               )}
             </div>
           </div>
-          <button onClick={() => setStep(0)} className="text-[#333] hover:text-[#555] text-xs transition-colors">← zurück</button>
+          <button onClick={() => setStep(0)} className="text-[#333] hover:text-[#707070] text-xs transition-colors">← zurück</button>
         </div>
       )}
 
@@ -122,7 +122,7 @@ function Funnel() {
       {step === 2 && (
         <div>
           <p className="text-white text-lg font-light mb-2">Passt.</p>
-          <div className="flex gap-6 text-xs text-[#555] mb-8 mt-3">
+          <div className="flex gap-6 text-xs text-[#707070] mb-8 mt-3">
             <span>{area}</span>
             <span className="text-[#333]">·</span>
             <span>{experience}</span>
@@ -139,10 +139,10 @@ function Funnel() {
             </svg>
             Jetzt per WhatsApp bewerben
           </a>
-          <p className="text-[#555] text-xs leading-relaxed mt-5 max-w-sm">
+          <p className="text-[#707070] text-xs leading-relaxed mt-5 max-w-sm">
             Wir melden uns persönlich. Kein Callcenter, keine Absage-Vorlage. Einfach ein kurzes Gespräch, um zu schauen, ob es passt.
           </p>
-          <button onClick={() => { setStep(0); setArea(null); setExperience(null); }} className="text-[#333] hover:text-[#555] text-xs transition-colors mt-6 block">← von vorne</button>
+          <button onClick={() => { setStep(0); setArea(null); setExperience(null); }} className="text-[#333] hover:text-[#707070] text-xs transition-colors mt-6 block">← von vorne</button>
         </div>
       )}
     </div>
@@ -173,34 +173,34 @@ export default function KarrierePage() {
       <Header />
       <main className="pt-16">
         {/* Hero */}
-        <section className="bg-[#111] border-b border-[#c0c0c0]/10 py-10 px-6">
+        <section className="bg-[#161616] border-b border-[#c0c0c0]/10 py-10 px-6">
           <div className="max-w-7xl mx-auto">
             <p className="text-[#c0c0c0]/50 text-xs tracking-[0.3em] uppercase mb-3">Wachse mit uns</p>
-            <h1 className="text-5xl md:text-6xl font-light text-white">Karriere</h1>
-            <p className="text-[#555] mt-4 max-w-xl">
+            <h1 className="text-5xl md:text-6xl font-bold text-white">Karriere</h1>
+            <p className="text-[#707070] mt-4 max-w-xl">
               Werde Teil eines leidenschaftlichen Teams. Bei Sinsig & Lang findest du ein familiäres Umfeld mit professionellen Standards.
             </p>
           </div>
         </section>
 
         {/* Jobs */}
-        <section className="bg-[#111] py-12 px-6">
+        <section className="bg-[#161616] py-12 px-6">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-white text-2xl font-light mb-8">Aktuelle Stellen</h2>
+            <h2 className="text-white text-2xl font-bold mb-8">Aktuelle Stellen</h2>
             <div className="space-y-px">
               {jobs.map((job) => (
-                <div key={job.title} className="bg-[#0d0d0d] hover:bg-[#111] transition-colors p-6 flex flex-col md:flex-row md:items-center gap-4">
+                <div key={job.title} className="bg-[#0d0d0d] hover:bg-[#161616] transition-colors p-6 flex flex-col md:flex-row md:items-center gap-4">
                   <div className="flex-1">
                     <div className="flex flex-wrap items-center gap-3 mb-2">
                       <h3 className="text-white font-medium">{job.title}</h3>
                       <span className="text-[10px] tracking-widest uppercase border border-[#c0c0c0]/20 text-[#c0c0c0] px-2 py-0.5">
                         {job.type}
                       </span>
-                      <span className="text-[10px] tracking-widest uppercase text-[#555]">
+                      <span className="text-[10px] tracking-widest uppercase text-[#707070]">
                         {job.dept}
                       </span>
                     </div>
-                    <p className="text-[#555] text-sm leading-relaxed">{job.desc}</p>
+                    <p className="text-[#707070] text-sm leading-relaxed">{job.desc}</p>
                   </div>
                   <CopyEmailButton email="jobs@sinsig-lang.de" />
                 </div>
@@ -209,9 +209,9 @@ export default function KarrierePage() {
 
             {/* Funnel */}
             <div className="mt-12 bg-[#0d0d0d] border border-[#c0c0c0]/10 p-8 md:p-12">
-              <p className="text-[#555] text-xs tracking-[0.3em] uppercase mb-4">Initiativbewerbung</p>
-              <h3 className="text-white text-2xl md:text-3xl font-light mb-3">Wir geben jedem eine Chance.</h3>
-              <p className="text-[#555] text-sm mb-8 max-w-xl">
+              <p className="text-[#707070] text-xs tracking-[0.3em] uppercase mb-4">Initiativbewerbung</p>
+              <h3 className="text-white text-2xl md:text-3xl font-bold mb-3">Wir geben jedem eine Chance.</h3>
+              <p className="text-[#707070] text-sm mb-8 max-w-xl">
                 Bei uns zählt der Mensch, nicht nur der Lebenslauf. Kein passendes Angebot gefunden? Meld dich trotzdem. Wir finden gemeinsam heraus, wo du reinpasst.
               </p>
 

@@ -39,28 +39,28 @@ export default function TeiledienstPage() {
       <Header />
       <main className="pt-16">
         {/* Hero */}
-        <section className="bg-[#111] border-b border-[#c0c0c0]/10 py-10 px-6">
+        <section className="bg-[#161616] border-b border-[#c0c0c0]/10 py-10 px-6">
           <div className="max-w-7xl mx-auto">
-            <p className="text-[#555] text-xs tracking-[0.3em] uppercase mb-3">Original Mercedes-Benz</p>
-            <h1 className="text-5xl md:text-6xl font-light text-white mb-4">Teiledienst</h1>
-            <p className="text-[#555] text-base max-w-xl leading-relaxed">
+            <p className="text-[#707070] text-xs tracking-[0.3em] uppercase mb-3">Original Mercedes-Benz</p>
+            <h1 className="text-5xl md:text-6xl font-bold text-white mb-4">Teiledienst</h1>
+            <p className="text-[#707070] text-base max-w-xl leading-relaxed">
               Original Ersatzteile und Zubehör für PKW, LKW, Hybrid und Oldtimer. Kurzfristig verfügbar, fair berechnet. Kein Aufschlag ohne Grund.
             </p>
           </div>
         </section>
 
         {/* Kategorien */}
-        <section className="bg-[#111] py-14 px-6">
+        <section className="bg-[#161616] py-14 px-6">
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-[#c0c0c0]/10">
               {categories.map((cat) => (
-                <div key={cat.number} className="bg-[#111] p-8 hover:bg-[#1a1a1a] transition-colors">
+                <div key={cat.number} className="bg-[#161616] p-8 hover:bg-[#202020] transition-colors">
                   <p className="text-[#c0c0c0]/30 text-xs font-mono tracking-widest mb-5">{cat.number}</p>
-                  <h2 className="text-white text-2xl font-light mb-3">{cat.title}</h2>
-                  <p className="text-[#555] text-sm leading-relaxed mb-6">{cat.desc}</p>
+                  <h2 className="text-white text-2xl font-bold mb-3">{cat.title}</h2>
+                  <p className="text-[#707070] text-sm leading-relaxed mb-6">{cat.desc}</p>
                   <ul className="space-y-1.5">
                     {cat.items.map((item) => (
-                      <li key={item} className="flex items-center gap-2 text-[#555] text-xs">
+                      <li key={item} className="flex items-center gap-2 text-[#707070] text-xs">
                         <span className="w-1 h-1 bg-[#c0c0c0]/30 rounded-full flex-shrink-0" />
                         {item}
                       </li>
@@ -73,12 +73,12 @@ export default function TeiledienstPage() {
         </section>
 
         {/* Hinweis */}
-        <section className="bg-[#111] border-t border-[#c0c0c0]/10 py-14 px-6">
+        <section className="bg-[#161616] border-t border-[#c0c0c0]/10 py-14 px-6">
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-[#c0c0c0]/10">
-              <div className="bg-[#111] p-8">
+              <div className="bg-[#161616] p-8">
                 <h3 className="text-white font-medium mb-3">Direkte Anfrage</h3>
-                <p className="text-[#555] text-sm leading-relaxed mb-6">
+                <p className="text-[#707070] text-sm leading-relaxed mb-6">
                   Teile­nummer zur Hand oder nur eine grobe Beschreibung? Wir helfen bei der Identifikation und prüfen die Verfügbarkeit. Einfach per WhatsApp oder Telefon.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3">
@@ -99,7 +99,7 @@ export default function TeiledienstPage() {
                   </a>
                 </div>
               </div>
-              <div className="bg-[#111] p-8">
+              <div className="bg-[#161616] p-8">
                 <h3 className="text-white font-medium mb-3">Öffnungszeiten Teilelager</h3>
                 <table className="w-full text-sm">
                   <tbody className="divide-y divide-[#c0c0c0]/5">
@@ -109,8 +109,8 @@ export default function TeiledienstPage() {
                       ["Sonntag", "Geschlossen"],
                     ].map(([day, time]) => (
                       <tr key={day}>
-                        <td className="py-2.5 text-[#555] text-xs">{day}</td>
-                        <td className="py-2.5 text-white text-xs text-right">{time}</td>
+                        <td className="py-2.5 text-[#8a8a8a] text-sm">{day}</td>
+                        <td className="py-2.5 text-white text-sm text-right">{time}</td>
                       </tr>
                     ))}
                   </tbody>

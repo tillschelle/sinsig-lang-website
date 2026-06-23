@@ -18,7 +18,7 @@ export default function Header() {
 
   return (
     <header
-      className="fixed top-0 left-0 right-0 z-50 bg-[#111] border-b border-[#c0c0c0]/10"
+      className="fixed top-0 left-0 right-0 z-50 bg-[#161616] border-b border-[#c0c0c0]/10"
     >
       <div className="w-full px-5 md:px-10 flex items-center justify-between h-16">
 
@@ -36,7 +36,7 @@ export default function Header() {
         </Link>
 
         {/* Nav + Button – rechts */}
-        <div className="hidden md:flex items-center gap-7">
+        <div className="hidden lg:flex items-center gap-6">
           {navLinks.map((link) => (
             <Link
               key={link.href}
@@ -51,7 +51,7 @@ export default function Header() {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden flex flex-col gap-1.5 p-2"
+          className="lg:hidden flex flex-col gap-1.5 p-2"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Menü"
         >
@@ -63,7 +63,7 @@ export default function Header() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden bg-[#111]/98 border-t border-[#c0c0c0]/10 px-6 py-6 flex flex-col gap-4">
+        <div className="lg:hidden bg-[#161616]/98 border-t border-[#c0c0c0]/10 px-6 py-6 flex flex-col gap-4">
           {navLinks.map((link) => (
             <Link
               key={link.href}

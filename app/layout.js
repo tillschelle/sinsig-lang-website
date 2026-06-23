@@ -19,7 +19,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="de" className="h-full">
-      <body className={`${poppins.variable} font-sans min-h-full flex flex-col antialiased bg-[#111]`}>
+      <body className={`${poppins.variable} font-sans min-h-full flex flex-col antialiased bg-[#161616]`}>
         {children}
         <WhatsAppFloat />
         <CookieBanner />

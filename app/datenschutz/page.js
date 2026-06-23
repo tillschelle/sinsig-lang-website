@@ -11,12 +11,12 @@ export default function DatenschutzPage() {
     <>
       <Header />
       <main className="pt-16">
-        <section className="bg-[#111] border-b border-[#c0c0c0]/10 py-24 px-6">
+        <section className="bg-[#161616] border-b border-[#c0c0c0]/10 py-24 px-6">
           <div className="max-w-3xl mx-auto">
             <p className="text-[#c0c0c0]/50 text-xs tracking-[0.3em] uppercase mb-3">Rechtliches</p>
-            <h1 className="text-5xl font-light text-white mb-16">Datenschutz&shy;erklärung</h1>
+            <h1 className="text-5xl font-bold text-white mb-16">Datenschutz&shy;erklärung</h1>
 
-            <div className="space-y-12 text-sm text-[#555] leading-relaxed">
+            <div className="space-y-12 text-sm text-[#707070] leading-relaxed">
 
               <div>
                 <h2 className="text-white text-base font-medium mb-4">1. Verantwortlicher</h2>

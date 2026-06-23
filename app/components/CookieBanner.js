@@ -30,20 +30,22 @@ export default function CookieBanner() {
 
   function accept() {
     localStorage.setItem("cookieConsent", "accepted");
+    window.dispatchEvent(new CustomEvent("cookieConsentChanged", { detail: { consent: "accepted" } }));
     setVisible(false);
   }
 
   function decline() {
     localStorage.setItem("cookieConsent", "declined");
+    window.dispatchEvent(new CustomEvent("cookieConsentChanged", { detail: { consent: "declined" } }));
     setVisible(false);
   }
 
   if (!visible) return null;
 
   return (
-    <div ref={ref} className="fixed bottom-0 left-0 right-0 z-[100] bg-[#1a1a1a] border-t border-[#c0c0c0]/15 px-6 py-5">
+    <div ref={ref} className="fixed bottom-0 left-0 right-0 z-[100] bg-[#202020] border-t border-[#c0c0c0]/15 px-6 py-5">
       <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-start sm:items-center gap-4 justify-between">
-        <p className="text-[#555] text-sm leading-relaxed max-w-2xl">
+        <p className="text-[#707070] text-sm leading-relaxed max-w-2xl">
           Wir verwenden technisch notwendige Cookies sowie optionale Analyse-Cookies zur Verbesserung unserer Website.{" "}
           <Link href="/cookies" className="text-[#c0c0c0]/70 hover:text-[#c0c0c0] underline underline-offset-2 transition-colors">
             Cookie-Richtlinie
@@ -56,7 +58,7 @@ export default function CookieBanner() {
         <div className="flex gap-3 flex-shrink-0">
           <button
             onClick={decline}
-            className="px-5 py-2 text-sm text-[#555] border border-[#c0c0c0]/15 hover:border-[#c0c0c0]/30 hover:text-[#c0c0c0] transition-colors"
+            className="px-5 py-2 text-sm text-[#707070] border border-[#c0c0c0]/15 hover:border-[#c0c0c0]/30 hover:text-[#c0c0c0] transition-colors"
           >
             Ablehnen
           </button>

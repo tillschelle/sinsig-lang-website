@@ -33,11 +33,11 @@ export default function CookiesPage() {
       <Header />
       <main className="pt-16">
         {/* Hero */}
-        <section className="bg-[#111] border-b border-[#c0c0c0]/10 py-24 px-6">
+        <section className="bg-[#161616] border-b border-[#c0c0c0]/10 py-24 px-6">
           <div className="max-w-7xl mx-auto">
             <p className="text-[#c0c0c0]/50 text-xs tracking-[0.3em] uppercase mb-3">Transparenz</p>
-            <h1 className="text-5xl md:text-6xl font-light text-white mb-4">Cookie-Richtlinie</h1>
-            <p className="text-[#555] max-w-xl text-sm leading-relaxed">
+            <h1 className="text-5xl md:text-6xl font-bold text-white mb-4">Cookie-Richtlinie</h1>
+            <p className="text-[#707070] max-w-xl text-sm leading-relaxed">
               Wir setzen Cookies ein, um Ihnen die bestmögliche Nutzung unserer Website zu ermöglichen.
               Hier erfahren Sie, welche Cookies wir verwenden und warum.
             </p>
@@ -45,10 +45,10 @@ export default function CookiesPage() {
         </section>
 
         {/* Erklärung */}
-        <section className="bg-[#1a1a1a] py-16 px-6 border-b border-[#c0c0c0]/10">
+        <section className="bg-[#202020] py-16 px-6 border-b border-[#c0c0c0]/10">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-white text-2xl font-light mb-4">Was sind Cookies?</h2>
-            <p className="text-[#555] text-sm leading-relaxed max-w-3xl">
+            <h2 className="text-white text-2xl font-bold mb-4">Was sind Cookies?</h2>
+            <p className="text-[#707070] text-sm leading-relaxed max-w-3xl">
               Cookies sind kleine Textdateien, die beim Besuch unserer Website auf Ihrem Gerät gespeichert werden.
               Sie ermöglichen es uns, Ihre Einstellungen zu speichern und die Website für Sie zu verbessern.
               Sie haben jederzeit die Möglichkeit, Cookies in Ihrem Browser zu deaktivieren oder zu löschen.
@@ -57,19 +57,19 @@ export default function CookiesPage() {
         </section>
 
         {/* Cookie-Kategorien */}
-        <section className="bg-[#111] py-20 px-6">
+        <section className="bg-[#161616] py-20 px-6">
           <div className="max-w-7xl mx-auto space-y-px">
             {cookieCategories.map((cat) => (
-              <div key={cat.title} className="bg-[#1a1a1a] p-8">
+              <div key={cat.title} className="bg-[#202020] p-8">
                 <div className="flex items-start justify-between gap-6 mb-4">
                   <div>
                     <h3 className="text-white font-medium text-lg mb-2">{cat.title}</h3>
-                    <p className="text-[#555] text-sm leading-relaxed max-w-2xl">{cat.desc}</p>
+                    <p className="text-[#707070] text-sm leading-relaxed max-w-2xl">{cat.desc}</p>
                   </div>
                   <span className={`flex-shrink-0 text-[10px] tracking-widest uppercase border px-3 py-1 ${
                     cat.required
                       ? "border-[#c0c0c0]/30 text-[#c0c0c0]"
-                      : "border-[#555]/40 text-[#555]"
+                      : "border-[#707070]/40 text-[#707070]"
                   }`}>
                     {cat.required ? "Erforderlich" : "Optional"}
                   </span>
@@ -79,7 +79,7 @@ export default function CookiesPage() {
                 <div className="mt-6 border-t border-[#c0c0c0]/10">
                   <table className="w-full text-sm mt-4">
                     <thead>
-                      <tr className="text-[#555] text-xs tracking-wider uppercase">
+                      <tr className="text-[#707070] text-xs tracking-wider uppercase">
                         <th className="text-left pb-3 font-normal">Name</th>
                         <th className="text-left pb-3 font-normal">Zweck</th>
                         <th className="text-left pb-3 font-normal">Laufzeit</th>
@@ -89,8 +89,8 @@ export default function CookiesPage() {
                       {cat.cookies.map((cookie) => (
                         <tr key={cookie.name}>
                           <td className="py-3 text-[#c0c0c0] font-mono text-xs">{cookie.name}</td>
-                          <td className="py-3 text-[#555]">{cookie.purpose}</td>
-                          <td className="py-3 text-[#555]">{cookie.duration}</td>
+                          <td className="py-3 text-[#707070]">{cookie.purpose}</td>
+                          <td className="py-3 text-[#707070]">{cookie.duration}</td>
                         </tr>
                       ))}
                     </tbody>
@@ -102,18 +102,18 @@ export default function CookiesPage() {
         </section>
 
         {/* Browser-Einstellungen */}
-        <section className="bg-[#1a1a1a] py-16 px-6 border-t border-[#c0c0c0]/10">
+        <section className="bg-[#202020] py-16 px-6 border-t border-[#c0c0c0]/10">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-white text-2xl font-light mb-4">Cookies verwalten</h2>
-            <p className="text-[#555] text-sm leading-relaxed max-w-3xl mb-6">
+            <h2 className="text-white text-2xl font-bold mb-4">Cookies verwalten</h2>
+            <p className="text-[#707070] text-sm leading-relaxed max-w-3xl mb-6">
               Sie können Cookies jederzeit über die Einstellungen Ihres Browsers deaktivieren oder löschen.
               Bitte beachten Sie, dass das Deaktivieren bestimmter Cookies die Funktionalität der Website einschränken kann.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-px bg-[#c0c0c0]/10">
               {["Chrome", "Firefox", "Safari", "Edge"].map((browser) => (
-                <div key={browser} className="bg-[#1a1a1a] p-6 hover:bg-[#222] transition-colors">
+                <div key={browser} className="bg-[#202020] p-6 hover:bg-[#272727] transition-colors">
                   <div className="text-white text-sm font-medium mb-1">{browser}</div>
-                  <div className="text-[#555] text-xs">Einstellungen → Datenschutz → Cookies</div>
+                  <div className="text-[#707070] text-xs">Einstellungen → Datenschutz → Cookies</div>
                 </div>
               ))}
             </div>
@@ -121,10 +121,10 @@ export default function CookiesPage() {
         </section>
 
         {/* Stand */}
-        <section className="bg-[#111] py-10 px-6 border-t border-[#c0c0c0]/10">
+        <section className="bg-[#161616] py-10 px-6 border-t border-[#c0c0c0]/10">
           <div className="max-w-7xl mx-auto">
             <p className="text-[#333] text-xs">
-              Stand: Juni 2025 · Bei Fragen: <a href="mailto:info@sinsig-lang.de" className="hover:text-[#555] transition-colors">info@sinsig-lang.de</a>
+              Stand: Juni 2025 · Bei Fragen: <a href="mailto:info@sinsig-lang.de" className="hover:text-[#707070] transition-colors">info@sinsig-lang.de</a>
             </p>
           </div>
         </section>

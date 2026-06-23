@@ -12,22 +12,22 @@ export default function GebrauchtwagenPage() {
       <Header />
       <main className="pt-16">
         {/* Hero */}
-        <section className="bg-[#111] border-b border-[#c0c0c0]/10 py-10 px-6">
+        <section className="bg-[#161616] border-b border-[#c0c0c0]/10 py-10 px-6">
           <div className="max-w-7xl mx-auto">
-            <p className="text-[#555] text-xs tracking-[0.3em] uppercase mb-3">Geprüfte Qualität</p>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-light text-white">Gebrauchtwagen</h1>
-            <p className="text-[#555] mt-4 max-w-xl">
+            <p className="text-[#707070] text-xs tracking-[0.3em] uppercase mb-3">Geprüfte Qualität</p>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white">Gebrauchtwagen</h1>
+            <p className="text-[#707070] mt-4 max-w-xl">
               Jedes Fahrzeug wird bei uns gründlich geprüft und aufbereitet. Transparenz und Qualität sind unser Anspruch.
             </p>
           </div>
         </section>
 
         {/* Placeholder */}
-        <section className="bg-[#111] py-10 px-6">
+        <section className="bg-[#161616] py-10 px-6">
           <div className="max-w-7xl mx-auto text-center py-10">
             <div className="w-12 h-px bg-[#c0c0c0]/20 mx-auto mb-8" />
-            <h2 className="text-white text-2xl font-light mb-4">Fahrzeugangebote folgen in Kürze</h2>
-            <p className="text-[#555] text-sm mb-10 max-w-md mx-auto">
+            <h2 className="text-white text-2xl font-bold mb-4">Fahrzeugangebote folgen in Kürze</h2>
+            <p className="text-[#707070] text-sm mb-10 max-w-md mx-auto">
               Aktuelle Angebote werden hier angezeigt. In der Zwischenzeit können Sie uns gerne direkt kontaktieren.
             </p>
             <a

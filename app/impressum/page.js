@@ -11,12 +11,12 @@ export default function ImpressumPage() {
     <>
       <Header />
       <main className="pt-16">
-        <section className="bg-[#111] border-b border-[#c0c0c0]/10 py-24 px-6">
+        <section className="bg-[#161616] border-b border-[#c0c0c0]/10 py-24 px-6">
           <div className="max-w-3xl mx-auto">
             <p className="text-[#c0c0c0]/50 text-xs tracking-[0.3em] uppercase mb-3">Rechtliches</p>
-            <h1 className="text-5xl font-light text-white mb-16">Impressum</h1>
+            <h1 className="text-5xl font-bold text-white mb-16">Impressum</h1>
 
-            <div className="space-y-12 text-sm text-[#555] leading-relaxed">
+            <div className="space-y-12 text-sm text-[#707070] leading-relaxed">
 
               <div>
                 <h2 className="text-white text-base font-medium mb-4">Angaben gemäß § 5 TMG</h2>
@@ -59,7 +59,8 @@ export default function ImpressumPage() {
               <div>
                 <h2 className="text-white text-base font-medium mb-4">Berufsbezeichnung</h2>
                 <p>
-                  Mercedes-Benz Vertragshändler und Vertragswerkstatt
+                  Mercedes-Benz Vertragshändler und Vertragswerkstatt<br />
+                  Carrier-Partnerbetrieb für Kühlaggregate
                 </p>
               </div>
 

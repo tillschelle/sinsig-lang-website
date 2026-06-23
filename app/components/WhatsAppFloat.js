@@ -40,10 +40,10 @@ export default function WhatsAppFloat() {
     >
       {/* Popup */}
       {open && (
-        <div className="bg-[#1a1a1a] border border-[#c0c0c0]/20 rounded-lg shadow-2xl overflow-hidden w-64">
+        <div className="bg-[#202020] border border-[#c0c0c0]/20 rounded-lg shadow-2xl overflow-hidden w-64">
           <div className="px-4 py-3 border-b border-[#c0c0c0]/10">
             <p className="text-white text-xs font-semibold tracking-wide">Abteilung wählen</p>
-            <p className="text-[#555] text-[11px] mt-0.5">Direkt per WhatsApp schreiben</p>
+            <p className="text-[#707070] text-[11px] mt-0.5">Direkt per WhatsApp schreiben</p>
           </div>
           {channels.map((ch) => (
             <a
@@ -52,7 +52,7 @@ export default function WhatsAppFloat() {
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setOpen(false)}
-              className="flex items-center gap-3 px-4 py-3 hover:bg-[#222] transition-colors border-b border-[#c0c0c0]/10 last:border-b-0"
+              className="flex items-center gap-3 px-4 py-3 hover:bg-[#272727] transition-colors border-b border-[#c0c0c0]/10 last:border-b-0"
             >
               <div className="w-8 h-8 rounded-full bg-[#25D366]/15 flex items-center justify-center flex-shrink-0">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="#25D366">
@@ -61,7 +61,7 @@ export default function WhatsAppFloat() {
               </div>
               <div>
                 <div className="text-white text-xs font-medium">{ch.label}</div>
-                <div className="text-[#555] text-[11px]">{ch.desc}</div>
+                <div className="text-[#707070] text-[11px]">{ch.desc}</div>
               </div>
             </a>
           ))}

@@ -1,5 +1,6 @@
 import Header from "@/app/components/Header";
 import Footer from "@/app/components/Footer";
+import MapEmbed from "@/app/components/MapEmbed";
 
 export const metadata = {
   title: "Kontakt | Sinsig & Lang GmbH & Co. KG | Bingen am Rhein",
@@ -33,19 +34,19 @@ export default function KontaktPage() {
       <Header />
       <main className="pt-16">
         {/* Hero */}
-        <section className="bg-[#111] border-b border-[#c0c0c0]/10 py-10 px-6">
+        <section className="bg-[#161616] border-b border-[#c0c0c0]/10 py-10 px-6">
           <div className="max-w-7xl mx-auto">
             <p className="text-[#c0c0c0]/50 text-xs tracking-[0.3em] uppercase mb-3">Wir sind für Sie da</p>
-            <h1 className="text-5xl md:text-6xl font-light text-white">Kontakt</h1>
+            <h1 className="text-5xl md:text-6xl font-bold text-white">Kontakt</h1>
           </div>
         </section>
 
         {/* Contact Cards */}
-        <section className="bg-[#111] py-20 px-6">
+        <section className="bg-[#161616] py-20 px-6">
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-[#c0c0c0]/10 mb-16">
               {contacts.map((c) => (
-                <div key={c.dept} className="bg-[#111] p-8">
+                <div key={c.dept} className="bg-[#161616] p-8">
                   <h3 className="text-white font-medium mb-5 pb-4 border-b border-[#c0c0c0]/10">{c.dept}</h3>
                   <div className="space-y-3">
                     <a href={`tel:+${c.whatsapp}`} className="flex items-center gap-3 text-[#8a8a8a] hover:text-white text-sm transition-colors">
@@ -89,7 +90,7 @@ export default function KontaktPage() {
                       ["Sonntag", "Geschlossen"],
                     ].map(([day, time]) => (
                       <tr key={day}>
-                        <td className="py-2.5 text-[#555]">{day}</td>
+                        <td className="py-2.5 text-[#707070]">{day}</td>
                         <td className="py-2.5 text-white text-right">{time}</td>
                       </tr>
                     ))}
@@ -103,15 +104,7 @@ export default function KontaktPage() {
 
               {/* Google Maps */}
               <div className="bg-[#0d0d0d] border border-[#c0c0c0]/10 overflow-hidden" style={{ minHeight: 320 }}>
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2579.3!2d7.8998274!3d49.9521139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bdef9c54e29a5d%3A0xac9250f127741129!2sSinsig+%26+Lang+GmbH+%26+Co.+KG!5e0!3m2!1sde!2sde!4v1700000000000"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0, filter: "grayscale(1) invert(0.9) contrast(0.8)", display: "block", minHeight: 320 }}
-                  allowFullScreen
-                  loading="lazy"
-                  title="Standort Sinsig & Lang"
-                />
+                <MapEmbed />
               </div>
             </div>
           </div>

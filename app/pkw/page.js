@@ -62,7 +62,7 @@ export default function PKWPage() {
       <Header />
       <main>
         {/* ── HERO ── */}
-        <section className="relative min-h-[55vh] flex items-end bg-[#111] overflow-hidden" style={{ paddingTop: "4rem" }}>
+        <section className="relative min-h-[55vh] flex items-end bg-[#161616] overflow-hidden" style={{ paddingTop: "4rem" }}>
           <div className="absolute bottom-0 left-0 right-0 h-[85%] z-0">
             <Image
               src="/s-klassen-hero.jpg"
@@ -73,21 +73,21 @@ export default function PKWPage() {
               priority
             />
           </div>
-          <div className="absolute inset-0 bg-gradient-to-t from-[#111] via-[#111]/60 to-transparent z-10" />
-          <div className="absolute inset-0 bg-gradient-to-b from-[#111] via-[#111]/40 to-transparent z-10" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#161616] via-[#161616]/60 to-transparent z-10" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#161616] via-[#161616]/40 to-transparent z-10" />
           <div className="relative z-20 w-full max-w-7xl mx-auto px-6 pb-16">
             <p className="text-[#c0c0c0]/50 text-xs tracking-[0.3em] uppercase mb-4">PKW · Personenwagen</p>
-            <h1 className="text-5xl md:text-7xl font-light text-white leading-none mb-5">
+            <h1 className="text-5xl md:text-7xl font-bold text-white leading-none mb-5">
               PKW
             </h1>
-            <p className="text-[#555] text-base max-w-xl leading-relaxed">
-              Vom Oldtimer bis zum Neuwagen, vom Mild-Hybrid bis zum Battery Electric Vehicle: jedes Fahrzeug bekommt die Aufmerksamkeit, die es verdient. Persönlich, sorgfältig und immer auf Sie zugeschnitten.
+            <p className="text-[#707070] text-base max-w-xl leading-relaxed">
+              Vom Oldtimer bis zum Neuwagen, vom Mild-Hybrid bis zum Battery Electric Vehicle: Wir decken alle Antriebsarten ab. Persönlich, sorgfältig und immer auf Sie zugeschnitten.
             </p>
           </div>
         </section>
 
         {/* ── HIGHLIGHT BADGES ── */}
-        <section className="bg-[#1a1a1a] border-b border-[#c0c0c0]/10">
+        <section className="bg-[#202020] border-b border-[#c0c0c0]/10">
           <div className="max-w-7xl mx-auto px-6 py-0 flex flex-col md:flex-row items-stretch">
             <div className="flex-1 grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-[#c0c0c0]/10">
               {[
@@ -99,7 +99,7 @@ export default function PKWPage() {
                   <div className="w-1.5 h-8 bg-[#c0c0c0]/20 flex-shrink-0" />
                   <div>
                     <div className="text-white text-sm font-medium">{h.label}</div>
-                    <div className="text-[#555] text-xs mt-0.5">{h.sub}</div>
+                    <div className="text-[#8a8a8a] text-sm mt-0.5">{h.sub}</div>
                   </div>
                 </div>
               ))}
@@ -122,18 +122,17 @@ export default function PKWPage() {
         </section>
 
         {/* ── LEISTUNGEN GRID ── */}
-        <section className="py-12 bg-[#111]">
+        <section className="py-12 bg-[#161616]">
           <div className="max-w-7xl mx-auto px-6">
             <div className="mb-10">
-              <p className="text-[#555] text-xs tracking-[0.3em] uppercase mb-3">Was wir bieten</p>
-              <h2 className="text-3xl md:text-4xl font-light text-white">Leistungen</h2>
+              <p className="text-[#707070] text-xs tracking-[0.3em] uppercase mb-3">Was wir bieten</p>
+              <h2 className="text-3xl md:text-4xl font-bold text-white">Leistungen</h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-[#c0c0c0]/10">
               {services.map((s) => (
-                <div key={s.number} className="bg-[#111] p-6 hover:bg-[#1a1a1a] transition-colors">
-                  <div className="text-[#c0c0c0]/30 text-xs font-mono mb-5 tracking-widest">{s.number}</div>
+                <div key={s.number} className="bg-[#161616] p-6 hover:bg-[#202020] transition-colors">
                   <h3 className="text-white font-medium text-base mb-3">{s.title}</h3>
-                  <p className="text-[#555] text-sm leading-relaxed">{s.desc}</p>
+                  <p className="text-[#707070] text-sm leading-relaxed">{s.desc}</p>
                 </div>
               ))}
             </div>
@@ -141,11 +140,11 @@ export default function PKWPage() {
         </section>
 
         {/* ── CTA ── */}
-        <section className="py-12 bg-[#1a1a1a] border-t border-[#c0c0c0]/10">
+        <section className="py-12 bg-[#202020] border-t border-[#c0c0c0]/10">
           <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-8">
             <div>
-              <h2 className="text-3xl md:text-4xl font-light text-white mb-3">Termin vereinbaren</h2>
-              <p className="text-[#555] text-sm max-w-md">
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-3">Termin vereinbaren</h2>
+              <p className="text-[#707070] text-sm max-w-md">
                 Schreiben Sie uns direkt per WhatsApp. Kein Callcenter, kein Formular.
                 Wir melden uns persönlich.
               </p>
