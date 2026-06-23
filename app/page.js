@@ -53,18 +53,18 @@ export default function Home() {
               />
 
               {/* Eyebrow */}
-              <p className="text-[#8a8a8a] text-[10px] font-medium tracking-[0.25em] uppercase mb-5">
+              <p className="text-white text-[10px] font-medium tracking-[0.25em] uppercase mb-5">
                 Seit 1945 · Bingen am Rhein
               </p>
 
               {/* Headline */}
               <h1 className="text-4xl md:text-5xl font-bold leading-[1.05] tracking-tight mb-5">
                 <span className="text-white">Aus<br />Leidenschaft<br /></span>
-                <span className="text-[#6b6b6b]">zum Stern.</span>
+                <span className="text-white">zum Stern.</span>
               </h1>
 
               {/* Subtext */}
-              <p className="text-[#7a7a7a] text-sm font-light leading-relaxed mb-7">
+              <p className="text-white text-sm font-light leading-relaxed mb-7">
                 Alles für Ihr Fahrzeug. Alles an einem Ort.
               </p>
 
@@ -107,8 +107,7 @@ export default function Home() {
 
               {/* Öffnungszeiten */}
               <div className="flex items-start gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#4ade80] flex-shrink-0 mt-1" />
-                <div className="text-[#8a8a8a] text-sm">
+                <div className="text-white text-sm">
                   <div className="flex gap-3"><span className="w-12">Mo–Fr</span><span>07:30–18:00</span></div>
                   <div className="flex gap-3"><span className="w-12">Sa</span><span>08:00–12:00</span></div>
                 </div>

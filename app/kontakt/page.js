@@ -90,14 +90,14 @@ export default function KontaktPage() {
                       ["Sonntag", "Geschlossen"],
                     ].map(([day, time]) => (
                       <tr key={day}>
-                        <td className="py-2.5 text-[#707070]">{day}</td>
+                        <td className="py-2.5 text-[#c0c0c0]">{day}</td>
                         <td className="py-2.5 text-white text-right">{time}</td>
                       </tr>
                     ))}
                   </tbody>
                 </table>
                 <div className="mt-6 pt-4 border-t border-[#c0c0c0]/5">
-                  <p className="text-[#333] text-xs">Adresse:</p>
+                  <p className="text-[#707070] text-xs">Adresse:</p>
                   <p className="text-[#8a8a8a] text-sm mt-1">Schulheiß-Kollei-Straße 3<br />55411 Bingen am Rhein</p>
                 </div>
               </div>

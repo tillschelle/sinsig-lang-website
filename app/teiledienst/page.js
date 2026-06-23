@@ -115,7 +115,7 @@ export default function TeiledienstPage() {
                     ))}
                   </tbody>
                 </table>
-                <p className="text-[#333] text-xs mt-5">
+                <p className="text-[#707070] text-xs mt-5">
                   Schulheiß-Kollei-Straße 3 · 55411 Bingen am Rhein
                 </p>
               </div>

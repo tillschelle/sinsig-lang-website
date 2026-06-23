@@ -3,9 +3,9 @@ import { useEffect, useRef, useState } from 'react';
 
 const stats = [
   { end: 1945, start: 1920, prefix: "", suffix: "", label: "Gegründet", decimals: 0 },
+  { end: 80, start: 60, prefix: "", suffix: "+", label: "Jahre Erfahrung", decimals: 0 },
   { end: 4.7,  start: 0,    prefix: "", suffix: "★", label: "Google Bewertung", decimals: 1 },
   { end: 4.8,  start: 0,    prefix: "", suffix: "★", label: "mobile.de Bewertung", decimals: 1 },
-  { end: 80, start: 60, prefix: "", suffix: "+", label: "Jahre Erfahrung", decimals: 0 },
 ];
 
 function Counter({ item, triggered }) {
