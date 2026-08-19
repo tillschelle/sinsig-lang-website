@@ -81,11 +81,11 @@ export default function KontaktPage() {
                 <table className="w-full text-sm">
                   <tbody className="divide-y divide-[#c0c0c0]/5">
                     {[
-                      ["Montag", "07:30–18:00 Uhr"],
-                      ["Dienstag", "07:30–18:00 Uhr"],
-                      ["Mittwoch", "07:30–18:00 Uhr"],
-                      ["Donnerstag", "07:30–18:00 Uhr"],
-                      ["Freitag", "07:30–18:00 Uhr"],
+                      ["Montag", "07:00–18:00 Uhr"],
+                      ["Dienstag", "07:00–18:00 Uhr"],
+                      ["Mittwoch", "07:00–18:00 Uhr"],
+                      ["Donnerstag", "07:00–18:00 Uhr"],
+                      ["Freitag", "07:00–18:00 Uhr"],
                       ["Samstag", "08:00–12:00 Uhr"],
                       ["Sonntag", "Geschlossen"],
                     ].map(([day, time]) => (

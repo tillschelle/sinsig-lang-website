@@ -127,9 +127,7 @@ export default function UeberUnsPage() {
         {/* Heute – Werte */}
         <section className="bg-[#202020] border-t border-[#c0c0c0]/10 py-20 px-6">
           <div className="max-w-7xl mx-auto">
-            <p className="text-[#8a8a8a] text-sm leading-relaxed max-w-2xl mb-10">
-              Auch heute ist Sinsig & Lang ein Familienbetrieb: Marion Lang, Ehefrau von Volker Lang, ist als Gesellschafterin weiterhin Teil des Unternehmens. Die operative Führung liegt seit März 2022 bei Martin Svoboda.
-            </p>
+
             <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-[#c0c0c0]/10">
               {[
                 {

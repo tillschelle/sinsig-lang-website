@@ -12,36 +12,36 @@ const departments = [
   {
     name: "Serviceberater PKW",
     members: [
-      { name: "Larissa Baumgarten", role: "Serviceberaterin" },
-      { name: "Claudia Klingler-Baumgarten", role: "Serviceberaterin" },
-      { name: "Erik Hittinger", role: "Serviceberater", img: "240726_S&L_00242_pp_Erik_Hittinger.jpeg" },
-      { name: "Stephanie Könen", role: "Serviceberaterin · Assistenz der Geschäftsleitung", img: "240726_S&L_00207_pp_Stephanie_Könen.jpeg" },
-      { name: "Tobias Schaibel", role: "Serviceberater", img: "240726_S&L_00167_pp_Tobias_Schaibel.jpeg" },
+      { name: "Larissa Baumgarten", role: "Serviceassistentin", img: "Larissa-Baumgarten-2026-05-05.jpg", pos: "80% top" },
+      { name: "Claudia Klingler-Baumgarten", role: "Serviceassistentin", img: "Claudia-Klingler-Baumgarten-2026-05-05.jpg", pos: "75% top", sortKey: "Baumgarten-Claudia" },
+      { name: "Erik Hittinger", role: "Serviceberater", img: "240726_S&L_00242_pp_Erik_Hittinger.jpeg", pos: "40% top" },
+      { name: "Stephanie Könen", role: "Serviceberaterin · Assistenz der Geschäftsleitung", img: "240726_S&L_00207_pp_Stephanie_Könen.jpeg", pos: "35% top" },
+      { name: "Tobias Schaibel", role: "Serviceberater", img: "240726_S&L_00167_pp_Tobias_Schaibel.jpeg", pos: "60% top" },
     ],
   },
   {
     name: "Serviceberater LKW",
     members: [
-      { name: "Dirk Biedenbender", role: "Serviceberater", img: "240726_S&L_00116_pp_Dirk_Biedenbender.jpeg" },
-      { name: "Werner Klumb", role: "Serviceberater", img: "240726_S&L_00075_pp_Werner_Klumb.jpeg" },
+      { name: "Dirk Biedenbender", role: "Serviceberater", img: "240726_S&L_00116_pp_Dirk_Biedenbender.jpeg", pos: "55% top" },
+      { name: "Werner Klumb", role: "Werkstattleiter", img: "240726_S&L_00075_pp_Werner_Klumb.jpeg", pos: "65% top" },
     ],
   },
   {
     name: "PKW-Werkstatt",
     members: [
-      { name: "Marcel Erb", role: "Kraftfahrzeugmechaniker" },
-      { name: "Christian Lorenz", role: "Kraftfahrzeugelektriker" },
-      { name: "Sascha Rappolt", role: "Kraftfahrzeugmechaniker" },
-      { name: "Till Schellenberger", role: "Kraftfahrzeugtechnikermeister" },
-      { name: "Orcun Topuzkanamis", role: "Kraftfahrzeugmechatroniker" },
-      { name: "Alessandro Ehlers", role: "Kraftfahrzeugmechatroniker" },
+      { name: "Marcel Erb", role: "Kraftfahrzeugmechaniker", img: "240726_S&L_00357_pp_Marcel_Erb.jpeg", pos: "60% top" },
+      { name: "Christian Lorenz", role: "Kraftfahrzeugelektriker", img: "Christian-Lorenz-2026-05-05.jpg", pos: "70% top" },
+      { name: "Sascha Rappolt", role: "Kraftfahrzeugmechaniker", img: "Sascha-Rappolt-2026-05-05.jpg", pos: "75% top" },
+      { name: "Till Schellenberger", role: "Kraftfahrzeugtechnikermeister", img: "Till-Schellenberger-2026-05-05.jpg", pos: "70% top" },
+      { name: "Orcun Topuzkanamis", role: "Kraftfahrzeugmechatroniker", img: "240726_S&L_00356_pp_Orcun_Topuzkanamis.jpeg", pos: "70% top" },
+      { name: "Alessandro Ehlers", role: "Kraftfahrzeugmechatroniker", img: "240726_S&L_00324_pp_Alessandro_Ehlers.jpeg", pos: "50% top" },
     ],
   },
   {
     name: "Lager & Teile",
     members: [
-      { name: "Nedin Caplja", role: "Teiledienstmitarbeiter", img: "240726_S&L_00152_pp_Nedin_Caplja.jpeg" },
-      { name: "Thomas Korbach", role: "Teiledienstmitarbeiter", img: "240726_S&L_00132_pp_Thomas_Korbach.jpeg" },
+      { name: "Nedin Caplja", role: "Teiledienstmitarbeiter", img: "240726_S&L_00152_pp_Nedin_Caplja.jpeg", pos: "70% top" },
+      { name: "Thomas Korbach", role: "Teiledienstmitarbeiter", img: "240726_S&L_00132_pp_Thomas_Korbach.jpeg", pos: "center top" },
       { name: "Knut Liesche", role: "Teiledienstmitarbeiter" },
     ],
   },
@@ -49,17 +49,18 @@ const departments = [
     name: "LKW-Werkstatt",
     members: [
       { name: "Frank Diemer", role: "Nutzfahrzeugmechatroniker" },
-      { name: "Nouredine El Ghadi", role: "Nutzfahrzeugmechatroniker" },
+      { name: "Nouredine El Ghadi", role: "Nutzfahrzeugmechatroniker", img: "Nuri-2026-05-05.jpg", pos: "70% top" },
       { name: "Mike Magiera", role: "Nutzfahrzeugmechatroniker" },
-      { name: "Andreas Schneeberger", role: "Nutzfahrzeugmechatroniker" },
-      { name: "Iron Fischer", role: "Nutzfahrzeugmechatroniker" },
+      { name: "Andreas Schneeberger", role: "Nutzfahrzeugmechatroniker", img: "240726_S&L_00408_pp_Andreas_Schneeberger.jpeg", pos: "50% top" },
+      { name: "Iron Fischer", role: "Nutzfahrzeugmechatroniker", img: "240726_S&L_00460_pp_Iron_Fischer.jpeg", pos: "55% top" },
     ],
   },
   {
     name: "Auszubildende",
     members: [
-      { name: "Mohammad A.", role: "Auszubildender" },
+      { name: "Robin B.", role: "Auszubildender" },
       { name: "Kai B.", role: "Auszubildender" },
+      { name: "Tim H.", role: "Auszubildender" },
       { name: "Louis J.", role: "Auszubildender" },
       { name: "Justin R.", role: "Auszubildender" },
       { name: "Jawad S.", role: "Auszubildender" },
@@ -68,15 +69,15 @@ const departments = [
   {
     name: "Service & Verwaltung",
     members: [
-      { name: "Dirk Weigand", role: "Serviceleiter", img: "240726_S&L_00573_pp_Dirk_Weigand.jpeg" },
-      { name: "Marion Lang", role: "Gesellschafterin · Marketing", img: "240726_S&L_00043_pp_Marion_Lang.jpeg" },
-      { name: "Sabrina Trautmann", role: "Buchhaltung", img: "240726_S&L_00103_pp_Sabrina_Trautmann.jpeg" },
+      { name: "Dirk Weigand", role: "Serviceleiter", img: "240726_S&L_00573_pp_Dirk_Weigand.jpeg", pos: "center top" },
+      { name: "Marion Lang", role: "Gesellschafterin · Marketing", img: "240726_S&L_00043_pp_Marion_Lang.jpeg", pos: "55% top" },
+      { name: "Sabrina Trautmann", role: "Buchhaltung", img: "240726_S&L_00103_pp_Sabrina_Trautmann.jpeg", pos: "55% top" },
     ],
   },
   {
     name: "Geschäftsleitung",
     members: [
-      { name: "Martin Svoboda", role: "Geschäftsführung", img: "240726_S&L_00587_pp_Martin_Svoboda.jpeg" },
+      { name: "Martin Svoboda", role: "Geschäftsführung", img: "240726_S&L_00587_pp_Martin_Svoboda.jpeg", pos: "center top" },
     ],
   },
 ];
@@ -108,8 +109,8 @@ export default function TeamPage() {
                 </div>
                 <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3">
                   {[...dept.members].sort((a, b) => {
-                    const lastName = (n) => n.trim().split(" ").pop();
-                    return lastName(a.name).localeCompare(lastName(b.name), "de");
+                    const lastName = (m) => m.sortKey || m.name.trim().split(" ").pop();
+                    return lastName(a).localeCompare(lastName(b), "de");
                   }).map((m) => (
                     <div key={m.name} className="bg-[#202020] border border-[#c0c0c0]/10 overflow-hidden">
                       <div className="relative bg-[#2a2a2a]" style={{ aspectRatio: "1/1" }}>
@@ -118,7 +119,8 @@ export default function TeamPage() {
                             src={`/img/team/${m.img}`}
                             alt={m.name}
                             fill
-                            className="object-cover object-top"
+                            className="object-cover"
+                            style={{ objectPosition: m.pos || "center top" }}
                             unoptimized
                           />
                         ) : (

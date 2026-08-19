@@ -108,7 +108,7 @@ export default function Home() {
               {/* Öffnungszeiten */}
               <div className="flex items-start gap-2">
                 <div className="text-white text-sm">
-                  <div className="flex gap-3"><span className="w-12">Mo–Fr</span><span>07:30–18:00</span></div>
+                  <div className="flex gap-3"><span className="w-12">Mo–Fr</span><span>07:00–18:00</span></div>
                   <div className="flex gap-3"><span className="w-12">Sa</span><span>08:00–12:00</span></div>
                 </div>
               </div>

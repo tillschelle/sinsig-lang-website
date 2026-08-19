@@ -104,7 +104,7 @@ export default function TeiledienstPage() {
                 <table className="w-full text-sm">
                   <tbody className="divide-y divide-[#c0c0c0]/5">
                     {[
-                      ["Mo–Fr", "07:30–18:00 Uhr"],
+                      ["Mo–Fr", "07:00–18:00 Uhr"],
                       ["Samstag", "08:00–12:00 Uhr"],
                       ["Sonntag", "Geschlossen"],
                     ].map(([day, time]) => (
