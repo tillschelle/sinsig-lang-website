@@ -1,7 +1,6 @@
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import WhatsAppFloat from "@/app/components/WhatsAppFloat";
-import CookieBanner from "@/app/components/CookieBanner";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -22,7 +21,6 @@ export default function RootLayout({ children }) {
       <body className={`${poppins.variable} font-sans min-h-full flex flex-col antialiased bg-[#161616]`}>
         {children}
         <WhatsAppFloat />
-        <CookieBanner />
       </body>
     </html>
   );

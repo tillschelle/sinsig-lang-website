@@ -5,18 +5,11 @@ export default function MapEmbed() {
   const [consent, setConsent] = useState(false);
 
   useEffect(() => {
-    setConsent(localStorage.getItem("cookieConsent") === "accepted");
-    function handleConsentChange(e) {
-      setConsent(e.detail.consent === "accepted");
-    }
-    window.addEventListener("cookieConsentChanged", handleConsentChange);
-    return () => window.removeEventListener("cookieConsentChanged", handleConsentChange);
+    setConsent(localStorage.getItem("mapConsent") === "accepted");
   }, []);
 
   function acceptAndLoad() {
-    localStorage.setItem("cookieConsent", "accepted");
-    window.dispatchEvent(new CustomEvent("cookieConsentChanged", { detail: { consent: "accepted" } }));
-    window.dispatchEvent(new CustomEvent("cookiebanner", { detail: { height: 0 } }));
+    localStorage.setItem("mapConsent", "accepted");
     setConsent(true);
   }
 
@@ -24,13 +17,13 @@ export default function MapEmbed() {
     return (
       <div className="flex flex-col items-center justify-center gap-4 text-center p-8" style={{ minHeight: 320 }}>
         <p className="text-[#8a8a8a] text-sm max-w-xs">
-          Die Karte wird von Google Maps geladen. Dafür ist Ihre Zustimmung zu Cookies erforderlich.
+          Die Karte wird von Google Maps geladen. Dabei werden Daten an Google übertragen.
         </p>
         <button
           onClick={acceptAndLoad}
           className="px-6 py-2.5 bg-white text-black text-sm font-medium hover:bg-[#c0c0c0] transition-colors"
         >
-          Cookies akzeptieren & Karte laden
+          Karte laden
         </button>
       </div>
     );

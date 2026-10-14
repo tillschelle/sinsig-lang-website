@@ -39,7 +39,7 @@ export default function ImpressumPage() {
                 <h2 className="text-white text-base font-medium mb-4">Handelsregister</h2>
                 <p>
                   Registergericht: Amtsgericht Mainz<br />
-                  Registernummer: [wird ergänzt]
+                  Registernummer: HRA 21551
                 </p>
               </div>
 

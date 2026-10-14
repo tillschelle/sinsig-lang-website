@@ -12,17 +12,7 @@ const cookieCategories = [
     required: true,
     desc: "Diese Cookies sind für den Betrieb der Website unbedingt erforderlich. Ohne sie kann die Website nicht korrekt funktionieren. Sie können nicht deaktiviert werden.",
     cookies: [
-      { name: "session", purpose: "Sitzungsverwaltung", duration: "Sitzung" },
-      { name: "consent", purpose: "Speicherung Ihrer Cookie-Einstellungen", duration: "12 Monate" },
-    ],
-  },
-  {
-    title: "Analyse & Statistik",
-    required: false,
-    desc: "Diese Cookies helfen uns zu verstehen, wie Besucherinnen und Besucher unsere Website nutzen. Alle Daten werden anonymisiert erhoben.",
-    cookies: [
-      { name: "_ga", purpose: "Google Analytics (Besucherstatistik)", duration: "24 Monate" },
-      { name: "_gid", purpose: "Google Analytics (Seitenaufrufe)", duration: "24 Stunden" },
+      { name: "mapConsent", purpose: "Speicherung Ihrer Zustimmung zum Laden von Google Maps", duration: "Dauerhaft (localStorage)" },
     ],
   },
 ];
@@ -38,7 +28,7 @@ export default function CookiesPage() {
             <p className="text-[#c0c0c0]/50 text-xs tracking-[0.3em] uppercase mb-3">Transparenz</p>
             <h1 className="text-5xl md:text-6xl font-bold text-white mb-4">Cookie-Richtlinie</h1>
             <p className="text-[#707070] max-w-xl text-sm leading-relaxed">
-              Wir setzen Cookies ein, um Ihnen die bestmögliche Nutzung unserer Website zu ermöglichen.
+              Diese Website verwendet ausschließlich technisch notwendige Cookies.
               Hier erfahren Sie, welche Cookies wir verwenden und warum.
             </p>
           </div>

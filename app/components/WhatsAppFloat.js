@@ -21,17 +21,7 @@ const channels = [
 
 export default function WhatsAppFloat() {
   const [open, setOpen] = useState(false);
-  const [bannerHeight, setBannerHeight] = useState(0);
-
-  useEffect(() => {
-    function handleBanner(e) {
-      setBannerHeight(e.detail.height);
-    }
-    window.addEventListener("cookiebanner", handleBanner);
-    return () => window.removeEventListener("cookiebanner", handleBanner);
-  }, []);
-
-  const bottomOffset = bannerHeight > 0 ? bannerHeight + 16 : 20;
+  const bottomOffset = 20;
 
   return (
     <div
